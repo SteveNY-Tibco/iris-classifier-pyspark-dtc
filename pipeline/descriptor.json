@@ -17,7 +17,7 @@
 			"DockerImage" : "bigoyang/pipeline-datasource:0.3.0",
 			"Volumes" : [
 				{
-					"Name" : "input",
+					"Name" : "metadata",
 					"MountPoint" : "/usr/local/Data"
 				}
 			],
@@ -82,8 +82,8 @@
     "System" : {
     	"Volume" : [
     		{
-    			"Name" : "input",
-    			"Value" : "$temp.project.home$/input"
+    			"Name" : "metadata",
+    			"Value" : "$temp.project.home$/metadata"
     		},	
     		{
     			"Name" : "artifacts",
